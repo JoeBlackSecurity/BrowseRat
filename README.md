@@ -22,13 +22,13 @@ Server-side - Use "pip install -r requirements.txt" to obtain the relevant requi
 Client-side - edit the $controllerUrl parameter with your server's IP. Browser is automatically run in hidden mode (You will receive no prompts of a successful connection, so simply type "BRAT> dir" to verify it works), remove '-headless' from the args_test parameter to show Firefox during execution. 
 
 # Features
-  Payloads are AES enctypted before being sent on the wire
-  Sessions for multiple agent connections 
-  Agent management (Add nicknames, kill sessions, or remove dead sessions)
-  File upload functionality
-  Back-end code updated
-  Agent payload updated to run smoother and not require hard-coded paths for FireFox
-  All commands to and from agents saved in local histroy 
+*Payloads are AES enctypted before being sent on the wire
+*Sessions for multiple agent connections 
+*Agent management (Add nicknames, kill sessions, or remove dead sessions)
+*File upload functionality
+*Back-end code updated
+*Agent payload updated to run smoother and not require hard-coded paths for FireFox
+*All commands to and from agents saved in local histroy 
 
 Browserat runs in a "cmd /c" Powershell context; by starting a statement with a semi-colon (;), you can easily escape it to execute regular Powershell syntax.
 
