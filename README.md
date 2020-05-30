@@ -13,7 +13,7 @@ Tabulate to make stuff pretty
 # Details
 Browserat is a Command and Control framework (still in development) with a reverse shell agent. Its capable of executing Windows OS and Powershell commands on the client once the agent executable is run by a user on their endpoint and communicates wtih AES encrypted payloads by using the user's own browser as a pivot to connect the client with the BrowseRat server. To achieve this, it performs the following actions:
 
-1. BrowseRat agent opens a browser (default is Firefox) in headless mode and connects to the command & control server of the BrowseRat server.
+1. BrowseRat agent opens a browser (default is Firefox) in headless mode and connects to the BrowseRat command & control server.
 2. The page returned by the Browserat server is a two-pronged CORS enabled web-page, which constantly polls the server for new commands 
 3. The Browserat agent starts a local web-server on port 8899.  The agent then polls the BrowesRat server for new AES encrypted commands  - once received in a request, this data is decrypted and is executed as an OS command. The command's output is then presented as a response, re-encrypted and sent back to the BrowseRat server.
 
