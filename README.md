@@ -4,11 +4,11 @@ A reverse shell that can utilize multiple major web-browsers to provide remote a
 I used the origional source (found here: https://github.com/Dor-Tumarkin/Browserat) on a PurpleTeam exercise and it performed amazingly.  After that exercise, I decided to take the origional base code and upgrade it with new features and a more stable back-end. This is the result of that work. 
 
 # Requirements
-Python2
-Python Flask
-SQLAlchemy for Flask
-Pycrypto for AES encryption
-Tabulate to make stuff pretty
+* Python2
+* Python Flask
+* SQLAlchemy for Flask
+* Pycrypto for AES encryption
+* Tabulate to make stuff pretty
 
 # Details
 Browserat is a Command and Control framework (still in development) with a reverse shell agent. Its capable of executing Windows OS and Powershell commands on the client once the agent executable is run by a user on their endpoint and communicates wtih AES encrypted payloads by using the user's own browser as a pivot to connect the client with the BrowseRat server. To achieve this, it performs the following actions:
